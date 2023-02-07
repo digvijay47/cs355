@@ -1,7 +1,7 @@
 const $= document.querySelector.bind(document);
 
 //const clckBtn= document.getElementById('clickmebutton')
-const clckBtn= ${'#clickmeBtn'};
+const clckBtn= $('#clickmebutton');
 
 clckBtn.addEventListener('click',foo);
 function foo(){
