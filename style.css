@@ -1,0 +1,22 @@
+img {
+    width: 200%, height 300%;
+
+}
+div{
+    background-color: blueviolet;
+    margin: 5%;
+    pading: 5%;
+}
+.special{
+    background-color: aqua;
+}
+.superspecial{
+    font-size: large;
+    background-color: rgb(33, 190, 19);
+
+}
+.special{
+    font-size: larger;
+    background-color: rgb(33, 190, 19);
+}
+
