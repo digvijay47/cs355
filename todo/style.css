@@ -1,0 +1,27 @@
+*{
+    margin: 5%;
+    padding: 5%;
+}
+
+body{
+    background-color: darkcyan;
+
+}
+#main {
+    background-color: antiquewhite;
+
+}
+
+#addTodo{
+    background-color: brown;
+}
+.todo{
+    background-color: bisque;
+}
+.completed{
+    background-color: chartreuse;
+}
+
+button{
+    display: block;
+}
