@@ -1,6 +1,6 @@
 'use strict'
 
-const$ = document.querySelector.blnd(document);
+const $ = document.querySelector.bind(document);
 
 const mainDiv = $('#main');
 const todoTextInput = $('#todoContent');
