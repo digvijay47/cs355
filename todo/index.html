@@ -1,19 +1,34 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-        
-        <div id="addTodo">
-            <textarea id="todoContent" cols="30" rows="3"></textarea>
-            <button id="todoButton" >Add Todo</button>
-        </div>
-        <h3>Current Todo's</h3>
-        <div id="main">
 
-        </div>
-    </body>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="addTodo">
+        <textarea id="todoContent" cols="30" rows="3"></textarea>
+        <button id="todoButton">Add Todo</button>
+    </div>
+    <h3>Current Todo's</h3>
+    <div id="main">
+
+    </div>
+
+    <p>
+        Count on
+    </p>
+    <p id='insideData'></p>
+
+    <script>
+        const inside = document.getElementById('insideData');
+        fetch('http://localhost:3000/where')
+            .then(response => response.text())
+            .then(data => inside.innerText = data)
+            .catch(error => console.log(error))
+    </script>
     <script src="script.js"></script>
+</body>
 
 </html>
