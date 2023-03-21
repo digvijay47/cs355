@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 app = express(); //Initializing the express
-//app.use(cors());
+app.use(cors());
 app.use(express.static("todo"));
 
 let count =0;
