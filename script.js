@@ -27,8 +27,8 @@ imageOne.addEventListener('mouseover', imageChange);
 imageOne.addEventListener('mouseleave', imageChangeTwo);
 
 
-const secondButton = $('#secondButton');
-secondButton.addEventListener('click', function() {
+const sndButton = $('#secondButton');
+sndButton.addEventListener('click', function() {
   const loremTexts = document.querySelectorAll('.super, .special, .superspecial');
   loremTexts.forEach(function(element) {
     element.style.fontSize = '5px';
