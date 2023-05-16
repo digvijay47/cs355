@@ -1,24 +1,36 @@
-const $= document.querySelector.bind(document);
+// script.js
 
-//const clckBtn= document.getElementById('clickmebutton')
-const clckBtn= $('#clickmebutton');
-const change = $('.super');
-const imageONe = $('img');
+const $ = document.querySelector.bind(document);
 
-clckBtn.addEventListener('click',foo);
-function foo(){
-    alert('helloooo')
-    change.style.fontSize = 30;
-    change.style.backgroundColor = 'green';
+const clckBtn = $('#clickmebutton');
+const elements = document.querySelectorAll('.super, .special, .superspecial');
+const imageOne = $('img');
+
+clckBtn.addEventListener('click', foo);
+function foo() {
+  alert('helloooo');
+  elements.forEach(function(element) {
+    element.style.fontSize = '50px';
+    element.style.backgroundColor = 'red';
+  });
 }
 
-function imageChange(){
-    imageONe.style.width =600;
+function imageChange() {
+  imageOne.style.width = '600px';
 }
 
-
-function imageChangeTwo(){
-    imageONe.style.width =300;
+function imageChangeTwo() {
+  imageOne.style.width = '300px';
 }
-imageONe.addEventListener('mouseover', imageChange);
-imageONe.addEventListener('mouseleave', imageChangeTwo);
+
+imageOne.addEventListener('mouseover', imageChange);
+imageOne.addEventListener('mouseleave', imageChangeTwo);
+
+
+const secondButton = $('#secondButton');
+secondButton.addEventListener('click', function() {
+  const loremTexts = document.querySelectorAll('.super, .special, .superspecial');
+  loremTexts.forEach(function(element) {
+    element.style.fontSize = '5px';
+  });
+});

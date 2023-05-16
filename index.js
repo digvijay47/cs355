@@ -1,4 +1,6 @@
-const express = require('express');
+const express = require('express'); // load express module
+ nedb = require("nedb-promises"); 
+ 
 const cors = require('cors');
 app = express(); //Initializing the express
 app.use(cors());
@@ -14,7 +16,12 @@ const increment =() =>{
 //     increment();
 //     res.json(count);
 // });
-
+//db.updateOne(
+    //{lastUpdated: {$exists:true}},
+    //{lastUpdated: new Date() },
+    //{upsert:true}
+  // );
+   NeDB/MongoDB 
 app.get(('/where'), (req,res) =>{
     //res.send("Rosary HHall");
     increment();
